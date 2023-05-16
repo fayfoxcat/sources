@@ -3,7 +3,7 @@ package Multithreading.thread;
 /**
  * 实现Runnable接口
  */
-public class MyThread implements Runnable{
+public class UseRunnable implements Runnable{
 
     private Integer value = 10;
 
@@ -19,7 +19,7 @@ public class MyThread implements Runnable{
     }
     public static void main(String[] args){
         /*定义Runnable子类对象*/
-        MyThread my = new MyThread();
+        UseRunnable my = new UseRunnable();
         /*设置线程A*/
         new Thread(my,"A").start();
         /*设置线程B*/
