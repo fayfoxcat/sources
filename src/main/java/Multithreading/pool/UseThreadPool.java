@@ -31,10 +31,17 @@ public class UseThreadPool {
          *
          */
         ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(
-                0, Integer.MAX_VALUE,
+                0, 3,
                 60L, TimeUnit.SECONDS,
-                new SynchronousQueue<>(),
+                new ArrayBlockingQueue<>(10),
                 Executors.defaultThreadFactory(),
-                new ThreadPoolExecutor.AbortPolicy());
+                new ThreadPoolExecutor.CallerRunsPolicy());
+
+        for (int i = 0; i < 5; i++) {
+            int finalI = i;
+            poolExecutor.submit(()->{
+                System.out.println(finalI);
+            });
+        }
     }
 }

@@ -4,6 +4,9 @@ public class User {
 
     private int id;
 
+    public User() {
+    }
+
     private String name;
 
     public int getId() {
