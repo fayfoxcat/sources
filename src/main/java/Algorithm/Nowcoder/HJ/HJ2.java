@@ -1,4 +1,4 @@
-package Algorithm.Nowcoder;
+package Algorithm.Nowcoder.HJ;
 
 import java.util.Scanner;
 
