@@ -15,8 +15,15 @@ public class Test {
 //        System.out.println(collect);
 //
 //        Map<List<String>,String> a = new HashMap<>();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        char[] chars = reader.readLine().toCharArray();
-        System.out.println(chars);
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//        char[] chars = reader.readLine().toCharArray();
+//        System.out.println(chars);
+//        HashSet<Object> objects = new HashSet<>();
+//        System.out.println(Math.round(11.5));
+        String a = "hello";
+        String b = "he" + new String("llo");
+        System.out.println(a==b);
+
     }
+
 }
