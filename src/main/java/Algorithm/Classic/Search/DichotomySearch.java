@@ -1,4 +1,4 @@
-package JavaBase.Search;
+package Algorithm.Classic.Search;
 
 /**
  * 二分法（折半）查找
