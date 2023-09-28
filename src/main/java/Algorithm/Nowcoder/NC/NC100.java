@@ -1,6 +1,5 @@
 package Algorithm.Nowcoder.NC;
 
-import com.sun.deploy.util.StringUtils;
 
 public class NC100 {
 

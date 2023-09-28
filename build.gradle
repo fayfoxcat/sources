@@ -18,6 +18,12 @@ dependencies {
 group = 'org.cat.sources'
 version = '0.0.1-SNAPSHOT'
 description = 'sources'
+
+//编译JAVA文件时采用UTF-8
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
