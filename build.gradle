@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url = uri('https://maven.aliyun.com/repository/public')
+    }
+}
+
+dependencies {
+    api 'cn.hutool:hutool-all:5.8.18'
+    api 'org.openjdk.jol:jol-core:0.17'
+}
+
+group = 'org.cat.sources'
+version = '0.0.1-SNAPSHOT'
+description = 'sources'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+        }
+    }
+}
