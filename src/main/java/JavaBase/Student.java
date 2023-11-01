@@ -1,4 +1,4 @@
-package JavaBase.Stream;
+package JavaBase;
 
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
